@@ -1,0 +1,30 @@
+
+<div class="container  text-center">
+  
+  <h3>Upload New Notes</h3>
+
+  <div> 
+
+    <button type="button" (click)="uploader.click()" class="btn btn-info">Choose File
+      <input hidden #uploader type="file" (change)="onChange($event.target.files)">
+    </button>
+
+  </div>
+
+
+  
+  <div>
+
+    <a href="#">{{filename}}</a>
+
+    
+  </div>
+
+  <button *ngIf=filePresent (click)="upload()" type="button" class="btn btn-primary">Upload</button>
+
+
+  <h4 style="color: red;">{{s3uploadResult}}</h4>
+</div>
+
+
+

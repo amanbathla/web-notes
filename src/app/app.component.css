@@ -1,0 +1,12 @@
+nav{
+    background:url('../assets/img/header.jpeg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.content{
+    margin-top: 100px;
+
+}

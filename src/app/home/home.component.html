@@ -1,0 +1,38 @@
+
+<div class="container">
+    
+
+  <div class="table-responsive text-center">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">FileName</th>
+          <th scope="col">Download</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let note of notesList;index as n">
+          <th scope="row">{{n}}</th>
+          <td>
+            <a href="{{fileUrl}}" (click)="downloadNotes(note)">{{note}}</a>
+            </td>
+  
+          <!-- Download PDF -->
+          <td>
+            <a href="{{fileUrl}}" (click)="downloadNotes(note)">
+              <img src="../../assets/img/downloadPDF.png">
+            </a>
+
+            <!-- <a href="javascript:void(0);" (click)="downloadNotes(note)">
+              <img src="../../assets/img/downloadPDF.png">
+            </a> -->
+          </td>
+  
+  
+        </tr>
+          </tbody>
+    </table>
+  </div>
+  
+</div>
