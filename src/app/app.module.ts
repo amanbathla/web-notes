@@ -11,13 +11,15 @@ import { PdfviewerComponent } from './pdfviewer/pdfviewer.component';
 import { AngularFileViewerModule } from '@taldor-ltd/angular-file-viewer';
 import{PdfService} from '../app/services/viewpdf/pdf.service';
 import{UploadService} from '../app/services/upload_service/upload.service';
+import { BotComponent } from './bot/bot.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     UploadComponent,
-    PdfviewerComponent
+    PdfviewerComponent,
+    BotComponent
   ],
   imports: [
     HttpClientModule,
